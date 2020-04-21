@@ -1,4 +1,4 @@
-# This Powershell script does the following:
+# This PowerShell script does the following:
 
 Creates a backup of a SQL Server DB.
 
