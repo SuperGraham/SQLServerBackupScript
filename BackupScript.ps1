@@ -94,7 +94,7 @@ if (!($ScriptTestMode)) { $MasterLogFile = "$BackupFolderRoot\$dBInstance\master
 
 #   Add backup details and backup start time to log file
 $stepTime = Get-Date -format "yyyy-MM-dd HHmm"
-Write-Output "`nBackup start me: $stepTime"
+Write-Output "`nBackup Start Time: $stepTime"
 Write-Output "Backup details - Instance: $SQLInstance, Database: $dBName, Schedule: $dBSchedule, Type: $dBBackupAction"
 $MasterLogFileText = $MasterLogFileText + "$stepTime - Instance: $SQLInstance, Database: $dBName, Schedule: $dBSchedule, Type: $dBBackupAction"
 if ($ScriptTestMode) { $MasterLogFileText = $MasterLogFileText + "  ** TEST RUN **" }
@@ -204,7 +204,7 @@ Switch ($dBSchedule)
 
 #   Add script end time to log file
 $stepTime = Get-Date -format "yyyy-MM-dd HHmm"
-Write-Output "`nEnd: $stepTime"
+Write-Output "`nBackup End Time: $stepTime"
 
 #   Stop transctpt and remove last 5 lines.
 Stop-Transcript | Out-Null
