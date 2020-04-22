@@ -206,7 +206,7 @@ Switch ($dBSchedule)
 $stepTime = Get-Date -format "yyyy-MM-dd HHmm"
 Write-Output "`nEnd: $stepTime"
 
-#   Stop transctpt and remove last 4 lines.
+#   Stop transctpt and remove last 5 lines.
 Stop-Transcript | Out-Null
 $content = Get-Content $LogFile
 $output = $content[0..($content.length-5)]
