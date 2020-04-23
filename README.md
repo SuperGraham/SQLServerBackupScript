@@ -13,3 +13,5 @@ Deletes obsolete backups.
 Uses various command line parameters; all/none/some of which can be optional.
 
 Can run in test mode so you don't waste time waiting for a backup to finish to test if the script is working.
+
+## Check the script for for full usage instructions.
